@@ -6,6 +6,7 @@
       <title>Status Page | ModSkinBR</title>
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <link rel="icon" type="image/x-icon" href="https://modskinbr.github.io/L.S.P.-UT/assets/favicon.ico">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <link rel="stylesheet" as="font" href="https://rsms.me/inter/inter.css">
       <link href="https://status.pulsetic.com/css/chunk-vendors.ab8256b1.css" rel="stylesheet">
       <link href="https://status.pulsetic.com/css/app.a7ab070f.css" rel="stylesheet">
@@ -133,17 +134,15 @@
          background-color:#1aaf5d;
          -webkit-transition:all .2s;
          transition:all .2s;
-         height:30px;
+         height:25px;
          width:100%;
          border-radius:5px
          }
          .rect.empty[data-v-6a85d526]{
          background-color:#d1d3d2;
-         height:20px
          }
          .rect.danger[data-v-6a85d526]{
          background-color:#f2994a;
-         height:40px
          }
          .statuses[data-v-4f63d52d]{
          display:-webkit-box;
@@ -290,10 +289,16 @@
          .IncidentsItem .title[data-v-14c314b8]{
          font-weight:700;
          margin-bottom:20px
+		 }
+		 .Incidents {
+		 box-shadow: 0 4px 4px rgb(0 0 0 / 1%), 0 8px 30px rgb(0 0 0 / 50%);
+		 border-radius: 20px;
          }
          .Incidents .title[data-v-a7d412c8]{
          font-size:27px;
-         font-weight:600
+         font-weight:600;
+		 padding: 5px 0px 0px 14px;
+		 text-align: center
          }
          .Incidents .date[data-v-a7d412c8]{
          margin-bottom:40px
@@ -400,13 +405,13 @@
             <!---->
             <div class="Status">
                <div class="StatusPage">
-                  <div class="StatusPageHeader" style="background: center center / cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(&quot;https://images2.alphacoders.com/913/thumb-1920-913622.jpg&quot;);" data-v-8865fbb8="" data-v-f65a4d96="">
+                  <div class="StatusPageHeader" style="box-shadow: 0 4px 4px rgb(0 0 0 / 1%), 0 8px 30px rgb(0 0 0 / 50%); background: center center / cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(&quot;https://images2.alphacoders.com/913/thumb-1920-913622.jpg&quot;);" data-v-8865fbb8="" data-v-f65a4d96="">
                      <div class="header desktop" data-v-f65a4d96="">
                         <div data-v-f65a4d96="" class="header-container d-flex align-items-center justify-content-between">
                            <a data-v-f65a4d96="" class="d-flex"><img data-v-f65a4d96="" src="https://modskinbr.github.io/L.S.P.-UT/assets/favicon.ico" class="logo" style="height: 64px"></a>
                            <a data-v-f65a4d96="" href="https://modskinbr.github.io/L.S.P.-UT/index.html" class="button get-updates"><span>Pagina Inicial</span></a>
                         </div>
-                        <div data-v-f65a4d96="" class="overall-status">
+                        <div data-v-f65a4d96="" class="overall-status" style="box-shadow: 0 4px 4px rgb(0 0 0 / 1%), 0 8px 30px rgb(0 0 0 / 50%);">
                            <div data-v-f65a4d96="" class="status icon-circle-some-down">!</div>
                            <div data-v-f65a4d96="" class="status-text">ModSkin desatualizado!</div>
                         </div>
@@ -425,13 +430,13 @@
                                     </div>
                                     <div data-v-1cf75796="" class="right">
                                        <div data-v-1cf75796="" class="toolbar">
-                                          <div data-v-cae9ab94="" data-v-1cf75796="" class="MonitorBadgeUptime"> 100.00% </div>
+                                          <div data-v-cae9ab94="" data-v-1cf75796="" class="MonitorBadgeUptime"> Ativo </div>
                                        </div>
                                     </div>
                                  </div>
                                  <div data-v-4f63d52d="" data-v-1cf75796="" class="UptimeHistory desktop">
                                     <div data-v-4f63d52d="" class="statuses">
-                                       <div data-v-6a85d526="" data-v-4f63d52d="" class="rect desktop" aria-expanded="false"></div>
+                                       <div data-v-6a85d526="" data-v-4f63d52d="" class="progress-bar progress-bar-striped rect desktop" aria-expanded="false"></div>
                                     </div>
                                  </div>
                               </div>
@@ -443,19 +448,19 @@
                                     </div>
                                     <div data-v-1cf75796="" class="right">
                                        <div data-v-1cf75796="" class="toolbar">
-                                          <div data-v-cae9ab94="" data-v-1cf75796="" class="MonitorBadgeUptime"> Offline </div>
+                                          <div data-v-cae9ab94="" data-v-1cf75796="" class="MonitorBadgeUptime"> Falhou </div>
                                        </div>
                                     </div>
                                  </div>
                                  <div data-v-4f63d52d="" data-v-1cf75796="" class="UptimeHistory desktop">
                                     <div data-v-4f63d52d="" class="statuses">
-                                       <div data-v-6a85d526="" data-v-4f63d52d="" class="rect danger desktop" aria-expanded="false"></div>
+                                       <div data-v-6a85d526="" data-v-4f63d52d="" class="progress-bar progress-bar-striped active rect danger" aria-expanded="false"></div>
                                     </div>
                                  </div>
                               </div>
                            </div>
                            <div data-v-a7d412c8="" data-v-3d9e80ac="" class="Incidents">
-                              <div data-v-a7d412c8="" class="title">Alertas Recentes</div>
+                              <div data-v-a7d412c8="" class="title">Alertas recentes</div>
                               <div data-v-5059f94f="" class="date">
                                  <div data-v-14c314b8="" data-v-5059f94f="" class="IncidentsItem">
                                     <div data-v-d09c9f14="" data-v-14c314b8="" class="IncidentsItemUpdate">
@@ -717,6 +722,7 @@
          color: #FFFFFF !important;
          background-color: #27AE60 !important;
          border: 1px solid #27AE60 !important;
+		 text-decoration: none;
          }
          .StatusPageHeader .get-updates-submit-button-color {
          background-color: #1aaf5d !important;
@@ -761,7 +767,7 @@
          .StatusPage .no-incidents, .IncidentsItem {
          background-color: #FFFFFF !important;
          color: #19221D !important;
-         border-radius: 0px !important;
+         border-radius: 20px !important;
          }
          .StatusPage .IncidentsItem .IncidentStatus {
          border-radius: 0px !important;
